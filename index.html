@@ -16,10 +16,7 @@
 </head>
 <body>
     <header>
-        <div class="bgimg">
-            
-        </div>
-        
+
         <div class="navbar">
             <div class="logo"><a href="#">Pancol - Pantai Ancol</a></div>
             <ul class="links">
@@ -28,11 +25,38 @@
                 <li><a href="services">Services</a></li>
                 <li><a href="contact">Contact</a></li>
             </ul>
-            <a href="#" class="action_btn">Start</a>
+            <a href="#" class="action_btn">Founder Website</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
+
+        <div class="dropdown_menu open">
+            <li><a href="homee">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li> <a href="#" class="action_btn">Founder</a> </li>
+        </div>
     </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
 </body>
 </html>
